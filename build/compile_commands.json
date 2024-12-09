@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/build",
+  "command": "/usr/bin/g++  -I\"/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/matplotlib-cpp\" -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/include/python3.12 -isystem /home/journey/.local/lib/python3.12/site-packages/numpy/_core/include -g -Wall -fopenmp -fopenmp-simd -fopenmp -o CMakeFiles/N_body.dir/main.cpp.o -c \"/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/main.cpp\"",
+  "file": "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/main.cpp",
+  "output": "CMakeFiles/N_body.dir/main.cpp.o"
+}
+]

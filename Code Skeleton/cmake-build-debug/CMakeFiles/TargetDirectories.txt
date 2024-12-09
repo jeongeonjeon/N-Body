@@ -1,0 +1,3 @@
+/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles/N_body.dir
+/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles/rebuild_cache.dir
