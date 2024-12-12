@@ -21,8 +21,8 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenMP.cmake",
-			"/snap/clion/305/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake"
+			"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindOpenMP.cmake",
+			"/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake"
 		],
 		"nodes" : 
 		[

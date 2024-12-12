@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/N_body.dir/clean
 CMakeFiles/N_body.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/N_body.dir/build.make CMakeFiles/N_body.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/N_body.dir/build.make CMakeFiles/N_body.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target N_body"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles" --progress-num=1,2 "Built target N_body"
 .PHONY : CMakeFiles/N_body.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/N_body.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/N_body.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles" 0
 .PHONY : CMakeFiles/N_body.dir/rule
 
 # Convenience name for target.

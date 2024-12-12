@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "N_body::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-N_body-Debug-936bb190a8bed0c5bb2c.json",
+					"jsonFile" : "target-N_body-Debug-fa011b372784d00a63ba.json",
 					"name" : "N_body",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug",
+		"build" : "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace",
 		"source" : "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton"
 	},
 	"version" : 
