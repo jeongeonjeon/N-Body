@@ -4263,3 +4263,894 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6a22/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c6a22.dir/build.make CMakeFiles/cmTC_c6a22.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2'
+        Building C object CMakeFiles/cmTC_c6a22.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_c6a22.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2/test_mpi.c"
+        Linking C executable cmTC_c6a22
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6a22.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c6a22.dir/test_mpi.c.o -o cmTC_c6a22  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-7o1UE2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1a023/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1a023.dir/build.make CMakeFiles/cmTC_1a023.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0'
+        Building CXX object CMakeFiles/cmTC_1a023.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_1a023.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0/test_mpi.cpp"
+        Linking CXX executable cmTC_1a023
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a023.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_1a023.dir/test_mpi.cpp.o -o cmTC_1a023  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-k7GpW0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c89af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c89af.dir/build.make CMakeFiles/cmTC_c89af.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs'
+        Building CXX object CMakeFiles/cmTC_c89af.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_c89af.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs/test_mpi.cpp"
+        Linking CXX executable cmTC_c89af
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c89af.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c89af.dir/test_mpi.cpp.o -o cmTC_c89af  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-nPGsGs'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6aeb3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6aeb3.dir/build.make CMakeFiles/cmTC_6aeb3.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R'
+        Building C object CMakeFiles/cmTC_6aeb3.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_6aeb3.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R/test_mpi.c"
+        Linking C executable cmTC_6aeb3
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6aeb3.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6aeb3.dir/test_mpi.c.o -o cmTC_6aeb3  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-VTCF7R'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a2ca4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a2ca4.dir/build.make CMakeFiles/cmTC_a2ca4.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss'
+        Building CXX object CMakeFiles/cmTC_a2ca4.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_a2ca4.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss/test_mpi.cpp"
+        Linking CXX executable cmTC_a2ca4
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2ca4.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_a2ca4.dir/test_mpi.cpp.o -o cmTC_a2ca4  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-moDJss'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5b6d5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5b6d5.dir/build.make CMakeFiles/cmTC_5b6d5.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ'
+        Building CXX object CMakeFiles/cmTC_5b6d5.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_5b6d5.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ/test_mpi.cpp"
+        Linking CXX executable cmTC_5b6d5
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b6d5.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5b6d5.dir/test_mpi.cpp.o -o cmTC_5b6d5  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-AokoYZ'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25447/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_25447.dir/build.make CMakeFiles/cmTC_25447.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l'
+        Building C object CMakeFiles/cmTC_25447.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_25447.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l/test_mpi.c"
+        Linking C executable cmTC_25447
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25447.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_25447.dir/test_mpi.c.o -o cmTC_25447  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-FTsA6l'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_10da6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_10da6.dir/build.make CMakeFiles/cmTC_10da6.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny'
+        Building CXX object CMakeFiles/cmTC_10da6.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_10da6.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny/test_mpi.cpp"
+        Linking CXX executable cmTC_10da6
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10da6.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_10da6.dir/test_mpi.cpp.o -o cmTC_10da6  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-pCqGny'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8edf8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8edf8.dir/build.make CMakeFiles/cmTC_8edf8.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D'
+        Building CXX object CMakeFiles/cmTC_8edf8.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_8edf8.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D/test_mpi.cpp"
+        Linking CXX executable cmTC_8edf8
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edf8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_8edf8.dir/test_mpi.cpp.o -o cmTC_8edf8  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-OVO10D'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60641/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_60641.dir/build.make CMakeFiles/cmTC_60641.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A'
+        Building C object CMakeFiles/cmTC_60641.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_60641.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A/test_mpi.c"
+        Linking C executable cmTC_60641
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60641.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_60641.dir/test_mpi.c.o -o cmTC_60641  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-LcSc1A'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0ef1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0ef1.dir/build.make CMakeFiles/cmTC_b0ef1.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib'
+        Building CXX object CMakeFiles/cmTC_b0ef1.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_b0ef1.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib/test_mpi.cpp"
+        Linking CXX executable cmTC_b0ef1
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0ef1.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b0ef1.dir/test_mpi.cpp.o -o cmTC_b0ef1  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-XzfRib'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8cc8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e8cc8.dir/build.make CMakeFiles/cmTC_e8cc8.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48'
+        Building CXX object CMakeFiles/cmTC_e8cc8.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_e8cc8.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48/test_mpi.cpp"
+        Linking CXX executable cmTC_e8cc8
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8cc8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_e8cc8.dir/test_mpi.cpp.o -o cmTC_e8cc8  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-JHMt48'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_313d6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_313d6.dir/build.make CMakeFiles/cmTC_313d6.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU'
+        Building C object CMakeFiles/cmTC_313d6.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_313d6.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU/test_mpi.c"
+        Linking C executable cmTC_313d6
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_313d6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_313d6.dir/test_mpi.c.o -o cmTC_313d6  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-KoWMmU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcae6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcae6.dir/build.make CMakeFiles/cmTC_dcae6.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ'
+        Building CXX object CMakeFiles/cmTC_dcae6.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_dcae6.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ/test_mpi.cpp"
+        Linking CXX executable cmTC_dcae6
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcae6.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_dcae6.dir/test_mpi.cpp.o -o cmTC_dcae6  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-8jHogZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f0a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f0a3.dir/build.make CMakeFiles/cmTC_5f0a3.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh'
+        Building CXX object CMakeFiles/cmTC_5f0a3.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_5f0a3.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh/test_mpi.cpp"
+        Linking CXX executable cmTC_5f0a3
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f0a3.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_5f0a3.dir/test_mpi.cpp.o -o cmTC_5f0a3  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-S0c7bh'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a9f47/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a9f47.dir/build.make CMakeFiles/cmTC_a9f47.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy'
+        Building C object CMakeFiles/cmTC_a9f47.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_a9f47.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy/test_mpi.c"
+        Linking C executable cmTC_a9f47
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9f47.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a9f47.dir/test_mpi.c.o -o cmTC_a9f47  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-MvWKsy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3869/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b3869.dir/build.make CMakeFiles/cmTC_b3869.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT'
+        Building CXX object CMakeFiles/cmTC_b3869.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_b3869.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT/test_mpi.cpp"
+        Linking CXX executable cmTC_b3869
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3869.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b3869.dir/test_mpi.cpp.o -o cmTC_b3869  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-CcHbFT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7b48/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7b48.dir/build.make CMakeFiles/cmTC_b7b48.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX'
+        Building CXX object CMakeFiles/cmTC_b7b48.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_b7b48.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX/test_mpi.cpp"
+        Linking CXX executable cmTC_b7b48
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7b48.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_b7b48.dir/test_mpi.cpp.o -o cmTC_b7b48  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-NxJuAX'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ffb08/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ffb08.dir/build.make CMakeFiles/cmTC_ffb08.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb'
+        Building C object CMakeFiles/cmTC_ffb08.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_ffb08.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb/test_mpi.c"
+        Linking C executable cmTC_ffb08
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffb08.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_ffb08.dir/test_mpi.c.o -o cmTC_ffb08  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-mQEXGb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dd3b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dd3b3.dir/build.make CMakeFiles/cmTC_dd3b3.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7'
+        Building CXX object CMakeFiles/cmTC_dd3b3.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_dd3b3.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7/test_mpi.cpp"
+        Linking CXX executable cmTC_dd3b3
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd3b3.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_dd3b3.dir/test_mpi.cpp.o -o cmTC_dd3b3  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-gxdoq7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_51c33/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_51c33.dir/build.make CMakeFiles/cmTC_51c33.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD'
+        Building CXX object CMakeFiles/cmTC_51c33.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_51c33.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD/test_mpi.cpp"
+        Linking CXX executable cmTC_51c33
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51c33.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_51c33.dir/test_mpi.cpp.o -o cmTC_51c33  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-BvbyQD'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f3cb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0f3cb.dir/build.make CMakeFiles/cmTC_0f3cb.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK'
+        Building C object CMakeFiles/cmTC_0f3cb.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_0f3cb.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK/test_mpi.c"
+        Linking C executable cmTC_0f3cb
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f3cb.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_0f3cb.dir/test_mpi.c.o -o cmTC_0f3cb  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-bhSQqK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_70636/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_70636.dir/build.make CMakeFiles/cmTC_70636.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11'
+        Building CXX object CMakeFiles/cmTC_70636.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_70636.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11/test_mpi.cpp"
+        Linking CXX executable cmTC_70636
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70636.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_70636.dir/test_mpi.cpp.o -o cmTC_70636  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-WyuO11'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_74b40/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_74b40.dir/build.make CMakeFiles/cmTC_74b40.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih'
+        Building CXX object CMakeFiles/cmTC_74b40.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_74b40.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih/test_mpi.cpp"
+        Linking CXX executable cmTC_74b40
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74b40.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_74b40.dir/test_mpi.cpp.o -o cmTC_74b40  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-DWEZih'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2be0d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2be0d.dir/build.make CMakeFiles/cmTC_2be0d.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7'
+        Building C object CMakeFiles/cmTC_2be0d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_2be0d.dir/test_mpi.c.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7/test_mpi.c"
+        Linking C executable cmTC_2be0d
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2be0d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_2be0d.dir/test_mpi.c.o -o cmTC_2be0d  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-USJ6i7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1edce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1edce.dir/build.make CMakeFiles/cmTC_1edce.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1'
+        Building CXX object CMakeFiles/cmTC_1edce.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_1edce.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1/test_mpi.cpp"
+        Linking CXX executable cmTC_1edce
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1edce.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_1edce.dir/test_mpi.cpp.o -o cmTC_1edce  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-jjcdY1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/snap/clion/308/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY"
+      binary: "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY'
+        
+        Run Build Command(s): /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_42e84/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_42e84.dir/build.make CMakeFiles/cmTC_42e84.dir/build
+        gmake[1]: Entering directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY'
+        Building CXX object CMakeFiles/cmTC_42e84.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -fdiagnostics-color=always -o CMakeFiles/cmTC_42e84.dir/test_mpi.cpp.o -c "/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY/test_mpi.cpp"
+        Linking CXX executable cmTC_42e84
+        /snap/clion/308/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42e84.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_42e84.dir/test_mpi.cpp.o -o cmTC_42e84  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so
+        gmake[1]: Leaving directory '/home/journey/Desktop/Assessment/HighPerform/N_body_Code_Skeleton/Code Skeleton/cmake-build-debug-event-trace/CMakeFiles/CMakeScratch/TryCompile-IBXdcY'
+        
+      exitCode: 0
+...
