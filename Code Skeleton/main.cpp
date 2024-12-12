@@ -20,12 +20,12 @@ inline void calcForce(
         double mA, double mB, // masses of body A and body b [in]
         double* Fx, double* Fy, double* Fz // force [out]
         ) {
-
+            
     // TODO
     double dx = pBx - pAx;
     double dy = pBy - pAy;
     double dz = pBz - pAz;
-    double r2 = dx * dx + dy * dy + dz * dz + 1e-10; // Add small value to avoid division by zero
+    double r2 = dx * dx + dy * dy + dz * dz + (1e-10); // Add small value to avoid division by zero
     double r = sqrt(r2);
     double F = G * mA * mB / r2;
 
@@ -51,11 +51,17 @@ inline void calcForce(
 #endif
 
 int main() {
-    srand((unsigned) time(nullptr));
+    // srand((unsigned) time(nullptr));
+    MPI_Init(nullptr, nullptr);
+
+    int rank, size;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
     double t = 0.0; // initial time
     double dt = 0.1; // time-step size
-    double T = 2000.0; // final time
-    int N = 900; // number of bodies
+    double T = 100.0; // final time
+    int N = 1000; // number of bodies
     auto force = new double[N][3]; // each of the forces
 
     // random number generator seeded with current clock time
@@ -80,7 +86,9 @@ int main() {
     }
 
     #if PLOT
-        createScatter(p, N); // plot initial positions of bodies
+        if (rank == 0) {
+            createScatter(p, N); // plot initial positions of bodies
+        }
     #endif
 
     auto v = new double[N][3]; // each of the body velocities
@@ -104,25 +112,30 @@ int main() {
         }
 
         // Calculate forces
-        #pragma omp parallel for collapse(2) schedule(dynamic)
-        for (int i = 0; i < N; i++) {
-            for (int j = i + 1; j < N; j++) {
-                double Fx, Fy, Fz;
-                calcForce(p[i][0], p[i][1], p[i][2],
-                          p[j][0], p[j][1], p[j][2],
-                          mass[i], mass[j],
-                          &Fx, &Fy, &Fz);
+        #pragma omp parallel for schedule(dynamic)
+        for (int k = 0; k < N * (N - 1) / 2; k++) {
+            int i = k / (N - 1);
+            int j = k % (N - 1);
 
-                #pragma omp critical
-                {
-                    force[i][0] += Fx;
-                    force[i][1] += Fy;
-                    force[i][2] += Fz;
+            if (j >= i) {
+                j++; // Skip the diagonal pairs
+            }
 
-                    force[j][0] -= Fx;
-                    force[j][1] -= Fy;
-                    force[j][2] -= Fz;
-                }
+            double Fx, Fy, Fz;
+            calcForce(p[i][0], p[i][1], p[i][2],
+                      p[j][0], p[j][1], p[j][2],
+                      mass[i], mass[j],
+                      &Fx, &Fy, &Fz);
+
+            #pragma omp critical
+            {
+                force[i][0] += Fx;
+                force[i][1] += Fy;
+                force[i][2] += Fz;
+
+                force[j][0] -= Fx;
+                force[j][1] -= Fy;
+                force[j][2] -= Fz;
             }
         }
 
@@ -144,13 +157,17 @@ int main() {
     // measure runtime
     auto stop = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
-    printf("Time taken: %f seconds", duration.count()/1000000.0);
+    if (rank == 0) {
+        printf("Time taken: %f seconds", duration.count() / 1000000.0);
+    }
 
     #if PLOT
-        std::cout << "Creating scatter plot..." << std::endl;
-        createScatter(p, N);  // plot final positions of bodies
-        std::cout << "Displaying plot..." << std::endl;
-        displayGraphs(); // show all plots
+        if (rank == 0) {
+            std::cout << "Creating scatter plot..." << std::endl;
+            createScatter(p, N);  // plot final positions of bodies
+            std::cout << "Displaying plot..." << std::endl;
+            displayGraphs(); // show all plots
+        }
     #endif
 
     delete[](mass);
@@ -158,5 +175,7 @@ int main() {
     delete[](p);
     delete[](v);
 
+    MPI_Finalize();
+    
     return 0;
 }
