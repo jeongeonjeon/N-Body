@@ -29,7 +29,7 @@ inline void calcForce(
     double r2 = dx * dx + dy * dy + dz * dz;
     double r, F;
 
-    #if r2 != 0
+    #if r2 > 0
         r = sqrt(r2);
         F = G * mA * mB / r2;
 
